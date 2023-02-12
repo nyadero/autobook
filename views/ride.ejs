@@ -1,0 +1,18 @@
+<link rel="stylesheet" href="/css/ride.css">
+
+
+
+<section>
+    <% if(data) { %>
+        <div class="images-container"> 
+           
+                <img src="/uploads/<%- data.image1 %>" alt="<%- data.make%>" width="100%" class="img-container" >
+            
+        </div>
+    <% }  else { %>
+        <h3>project not found</h3>
+    <% }%>
+</section>
+
+
+<script src="/js/rides.js"></script>

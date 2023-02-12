@@ -1,0 +1,8 @@
+.banner{
+    height: 150px;
+    padding: var(--padding-lg);
+    background: royalblue;
+}
+section{
+    padding: var(--padding-lg);
+}

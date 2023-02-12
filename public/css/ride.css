@@ -1,0 +1,18 @@
+section{
+    padding: var(--padding-lg);
+}
+.images-container{
+    min-height: 350px;
+    background: chartreuse;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    align-items: center;
+}
+.img-container{
+    height: 300px;
+    overflow: hidden;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+}

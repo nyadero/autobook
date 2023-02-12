@@ -1,0 +1,43 @@
+<link rel="stylesheet" href="/css/rides.css">
+
+<div class="banner">
+    <h2>The biggest car community in Kenya</h2>
+    <a href="/submit-ride" >
+        <button class="submit-ride" type="button" > Submit your ride</button>
+    </a>
+</div>
+
+<section>
+ 
+    
+    <% if(data.length > 0) { %>
+        <div class="rides-container">
+       <% data.forEach(ride => { %>
+        <a class="article" href="/ride/<%- ride.id%>"> 
+        <article>
+            <h3 class="make"><%- ride.make %></h3>
+            <% if(ride.image1) { %>
+                <div class="img-container">
+                  <img src="/uploads/<%- ride.image1 %>" alt="<%- ride.make %>" class="img" >
+                </div>
+            <% } else { %>
+                 <div class="img-container">
+                 <img src="/images/noride.jpg" alt="<%- ride.make %>" width="100%" class="img" >
+                </div>
+            <% } %>
+                       <h3 class="owner"><%- ride.name %></h3>
+        </article>
+        </a>
+      <% }) %> 
+      </div>
+    <% } else { %>
+         <h1>No rides found</h1>
+    <% } %>
+
+
+
+
+</section>
+
+
+<script src="/js/rides.js"></script>

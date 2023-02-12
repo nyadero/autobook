@@ -1,0 +1,52 @@
+<link rel="stylesheet" href="/css/register.css">
+<section>
+
+
+   <h4>Hello welcome to like my rides</h4>
+    
+   <% if( error_msg != "") { %>
+<div class="alerts-container">
+    <p class="error"> <%=  error_msg %> </p>
+   </div>
+   <% }  %>
+
+
+   <% if(success_msg != "") { %>
+<div class="alerts-container">
+    <p class="success"> <%= success_msg %> </p>
+   </div>
+   <% }  %>
+   
+
+     <form action="register" method="post">
+        <div class="form-control">
+            <label for="name">Name</label>
+            <input type="text" name="name" id="name" placeholder="your name" class="form-input"required >
+        </div>
+
+        <!-- email -->
+        <div class="form-control">
+            <label for="email">Email</label>
+            <input type="email" name="email" id="email" placeholder="your email" class="form-input" required>
+        </div>
+
+        <!-- password -->
+        <div class="form-control">
+            <label for="password">Password</label>
+            <input type="password" name="password" id="password" placeholder="your password" class="form-input">
+        </div>
+
+        <!-- confirm password -->
+        <div class="form-control">
+            <label for="confirm-password">Password</label>
+            <input type="password" name="confirmpassword" id="confirmpassword" placeholder="confirm password" class="form-input">
+        </div>
+
+        <div class="btn-container">
+            <button type="submit">Register</button>
+
+            <small>Already have an account? <span><a href="/login">Login</a></span> </small>
+        </div>
+    </form>
+
+</section>

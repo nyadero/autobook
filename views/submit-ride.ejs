@@ -1,0 +1,49 @@
+<link rel="stylesheet" href="/css/submitride.css">
+
+
+<div class="banner">
+    banner container
+</div>
+
+<section>
+    <form action="submit-ride"  method="POST" enctype="multipart/form-data">
+
+       <div class="form-control">
+        <label for="make">Make</label>
+        <input type="text" name="make" id="make" placeholder="add the make of your ride" class="form-input">
+       </div>
+
+       <div class="form-control">
+        <label for="model">Model</label>
+        <input type="text" name="model" id="model" placeholder="add the model of your ride" class="form-input">
+       </div>
+
+       <div class="form-control">
+        <label for="yom">YOM</label>
+        <input type="text" name="yom" id="yom" placeholder="yom" class="form-input">
+       </div>
+
+        <div class="form-control">
+        <label for="ride_description">Describe your ride</label>
+        <textarea name="description" id="ride_description" rows="5" cols="10" placeholder="give a brief description your ride" class="form-input"></textarea>
+       </div>
+
+       
+
+       <div class="form-control">
+        <label for="images">Images</label>
+            <input type="file" name="images" class="images" id="images" multiple>
+            <button type="button"> Add images of your ride</button>
+       </div>
+
+        <div class="preview-container">
+            <!-- <img src="" alt="" srcset="" class="preview"> -->
+        </div>
+
+
+       <button type="submit">Submit ride</button>
+
+    </form>
+</section>
+
+<script src="/js/submitride.js"></script>

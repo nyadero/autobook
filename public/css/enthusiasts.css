@@ -1,0 +1,30 @@
+.banner{
+    min-height: 150px;
+    background: royalblue;
+    padding: var(--padding-lg);
+}
+
+section{
+    padding: var(--padding-lg);
+    min-height: 500px;
+}
+.enthusiasts-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 20px;
+    margin: 20px 0;
+}
+.enthusiast{
+    background: #fff;
+    min-height: 250px;
+    border-radius: 7px;
+    padding: 0.3rem;
+     box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+}
+
+
+@media screen and (max-width: 650px) {
+    .banner, section{
+        padding: var(--padding-sm);
+    }
+}

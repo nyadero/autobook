@@ -1,0 +1,75 @@
+section{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    /* width: 100%; */
+}
+h4{
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    font-weight: 400;
+    text-align: center;
+}
+.alerts-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.success, .error{
+    margin-bottom: 10px;
+    font-size: 1rem;
+}
+form{
+    width: 50%;
+    margin: 0 auto;
+    background: #fff;
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.1);
+    padding: 0.5rem;
+    border-radius: 8px;
+}
+.form-control{
+    display: flex;
+    flex-direction: column;
+    margin: 15px 0;
+}
+.form-input{
+    /* width: 100%; */
+    margin-top: 10px;
+    padding: 0.8rem;
+    border: 1px solid royalblue;
+    outline: none;
+    font-size: 1rem;
+    border-radius: 8px;
+}
+.btn-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+.btn-container button{
+    width: 100%;
+    background: royalblue;
+    color: #fff;
+    font-size: 1rem;
+    border: transparent;
+    border-radius: 6px;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-bottom: 10px;
+}
+.btn-container small{
+    font-size: 1.1rem;
+}
+
+
+@media screen and (max-width: 650px) {
+    section{
+        padding: 0.5rem;
+    }
+    form{
+        width: 90%;
+    }
+}
